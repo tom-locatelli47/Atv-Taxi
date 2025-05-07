@@ -67,10 +67,11 @@ a.get-started {
 }
 /*=================================================================================================================*/
 section.banner {
-  background: url(../src/image/celular.png) no-repeat right, url(../src/image/background-footer.png),
-    linear-gradient(rgba(225, 244, 255,  0.6), rgba(225, 244, 255, 0.6));
+  background: url(../src/image/celular.png) no-repeat right,
+    url(../src/image/background-footer.png),
+    linear-gradient(rgba(225, 244, 255, 0.6), rgba(225, 244, 255, 0.6));
   padding: 10vw 8vw;
-  background-size: auto 100% ;
+  background-size: auto 100%;
 }
 
 section.banner h2 {
@@ -105,11 +106,36 @@ section.banner p button span {
 section.ready h2 {
   text-align: center;
   font-size: 2rem;
+  padding: 8vw 0 0.5vw 0;
 }
 
-section.ready h2 p {
+section.ready p {
+  margin: 20px 0;
+  width: 40%;
+  display: block;
+}
+
+section.ready div.texto-meio {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 6vw 0;
+}
+
+section.ready ul li {
+  text-align: left;
+}
+
+section.ready ul li span {
+  background: #e1f4ff;
+  color: #fbbc05;
+  font-size: 3rem;
+  padding: 10px;
+  border-radius: 8px;
+  width: 20%;
+  margin: 10px;
   text-align: center;
 }
+
 /*=============================================PC=============================================================================*/
 
 @media (min-width: 1024px) {
@@ -155,5 +181,17 @@ section.ready h2 p {
 
   a.logo img {
     margin: 0 7px 0 0;
+  }
+
+  section.ready div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section.ready ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 10vw;
   }
 }
