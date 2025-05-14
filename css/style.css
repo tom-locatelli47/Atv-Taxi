@@ -109,6 +109,10 @@ section.ready h2 {
   padding: 8vw 0 0.5vw 0;
 }
 
+section.redy {
+  text-align: center;
+}
+
 section.ready p {
   margin: 20px 0;
   width: 40%;
@@ -125,6 +129,11 @@ section.ready ul li {
   text-align: left;
 }
 
+section.ready ul li h3 {
+  margin: 15px 0 5px 0;
+  font-size: 1rem;
+}
+
 section.ready ul li span {
   background: #e1f4ff;
   color: #fbbc05;
@@ -134,6 +143,174 @@ section.ready ul li span {
   width: 20%;
   margin: 10px;
   text-align: center;
+}
+
+section.dowload {
+  background-color: #fbbc05;
+  border-radius: 20px;
+  padding: 10vw 2vw 10vw 12vw;
+  margin: 5vw;
+  background-image: url(../src/image/celular.png), url(../src/image/celular.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 66% 170%, 100% -54%;
+  background-size: 30% auto, 30% auto;
+  border: 1px solid black; /* bordinha */
+}
+
+section.dowload div h2 {
+  font-size: 2rem;
+  color: white;
+  padding: 0 0 4vw 0.5vw;
+  width: 100%;
+  font-weight: bold; /*negrito*/
+}
+
+section.dowload div p {
+  color: white;
+  padding: 0 0 0 0.5vw;
+  width: 30%;
+}
+
+section.dowload button {
+  color: #ffffff;
+  background-color: #21243d;
+  padding: 1.2vw 3vw;
+  margin: 5vw 0 0 0.5vw;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+section.services {
+  margin: 5vw;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 10vw;
+}
+
+section.services div.titulo {
+  text-align: left;
+  width: 110%;
+}
+
+section.services div.titulo h2 {
+  font-weight: bold;
+}
+
+section.services div.titulo p {
+  padding: 8px 0 0 0;
+  color: black;
+  font-size: 0.7rem;
+}
+
+section.services div.services ul {
+  padding: 20px 20px 20px 10vw;
+  display: flex;
+}
+
+section.services div.services ul li p {
+  color: black;
+  padding: 10px 20px 20px 10px;
+}
+
+section.services div.services ul li h3 {
+  font-weight: bold;
+  padding: 30px 20px 20px 10px;
+}
+
+section.services div.services ul li {
+  border-radius: none;
+  padding: 1vw;
+  margin: 1vw;
+  width: 40%;
+  background-color: #ede8e8;
+}
+section.services div.services ul li span {
+  font-size: 2rem;
+}
+
+section.contact {
+  margin: 5vw;
+}
+
+section.contact div.contact {
+  margin: 10vw 0 5vw 0;
+}
+
+section.contact div.contact h2 {
+  font-size: 1rem;
+  padding: 1vw;
+  font-weight: bold;
+  text-align: center;
+}
+section.contact div.contact p {
+  color: #39393b;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+section.contact div.informacao form input {
+  border: none;
+  border-bottom: 2px solid #fbbc05;
+  padding: 1vw;
+  color: black;
+}
+section.contact div.informacao form textarea {
+  border: none;
+  border-bottom: 2px solid #fbbc05;
+  width: 100%;
+  text-align: left;
+}
+
+section.contact div.informacao legend {
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.7rem;
+  padding: 1vw;
+}
+
+section.contact div.mensagem {
+  width: 100%;
+}
+section.contact div.informacao button {
+  color: rgb(0, 0, 0);
+  background-color: #fbbc05;
+  padding: 10px 20px;
+  border: none;
+  margin: 15px;
+}
+
+section.contact div.map {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10vw;
+}
+/*==================================footer=====================================================================*/
+footer div.fim {
+  display: flex;
+  justify-content: space-between;
+  margin:  10vw 20vw;
+}
+
+footer div.fim span {
+  color: #fbbc05;
+  padding: 15px 12px 7px 0;
+}
+footer div.fim h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 0 5px 0;
+}
+
+footer div.fim ul li{
+  color: #888888;
+  padding: 10px 0;
+}
+footer div.terminado {
+  text-align: center;
+  background-color: #e1f4ff;
+  padding: 2% 0;
+  color: #888888;
 }
 
 /*=============================================PC=============================================================================*/
@@ -189,9 +366,41 @@ section.ready ul li span {
     align-items: center;
   }
 
+  section.ready img {
+    margin: 0 0 0 5vw;
+  }
+
   section.ready ul {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 0 10vw;
+    padding: 0 0 0 5vw;
+  }
+
+  section.services div.services ul li span#redirecionamento {
+    display: none;
+  }
+
+  section.services div.services ul li:hover span#redirecionamento {
+    display: inline;
+    position: absolute;
+    padding: 0 15vw 0 15vw;
+  }
+
+  section.services div.services ul li:hover {
+    background-color: #fbbc05;
+  }
+
+  section.services ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 10vw;
+    padding: 0 0 0 10vw;
+  }
+
+  section.contact div.informacao {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
   }
 }
